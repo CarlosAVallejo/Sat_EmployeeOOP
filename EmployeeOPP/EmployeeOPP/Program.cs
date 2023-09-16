@@ -3,9 +3,11 @@
 try
 {
     //Declaración de variables
-    int day, month, year;
+    int day, month, year, Emp;
     string firstName, lastName;
     decimal salary;
+    
+
 
     Console.WriteLine("OOP APPLICATION");
     Console.WriteLine("---------------");
@@ -23,6 +25,11 @@ try
     Date dateObject = new Date(day, month, year);
     Console.WriteLine("\n");
     Console.WriteLine(dateObject.ToString());
+
+    Console.WriteLine("Que tipo de empleado desea ingresar \n 1. Asalariado 2. Por Horas 3. Por comision ");
+    Emp = Convert.ToInt32(Console.ReadLine());
+
+    
 
     Console.Write("Ingresar nombre completo: ");
     firstName = Console.ReadLine();
